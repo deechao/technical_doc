@@ -15,28 +15,111 @@
   </head>
   <body>
     <header class="topic">
-      <h1>documentation</h1>
+      <h1>Basic Structure of HTML</h1>
       <nav id="navbar">
-        <li><a href="#" class="nav-link">hello</a></li>
-        <li><a href="#" class="nav-link">hello</a></li>
-        <li><a href="#" class="nav-link">hello</a></li>
-        <li><a href="#" class="nav-link">hello</a></li>
+        <li><a href="#basic-structure" class="nav-link">Basic structure</a></li>
+        <li><a href="#DTD" class="nav-link">DTD</a></li>
+        <li><a href="#html element" class="nav-link">HTML element</a></li>
+        <li><a href="#head element" class="nav-link">Head element</a></li>
+        <li><a href="#body element" class="nav-link">Body element</a></li>
       </nav>
     </header>
     <main id="main-doc">
       <section class="main-section">
-        <header id="java"></header>
+        <header id="basic-structure">the basic structue of HTML</header>
+        <p>
+          Before you can start adding content to your document, there's a basic
+          structure you need to set up in your file. This structure isn't only
+          required for it to work but will also you to provide useful
+          information about your document. The basic structure of any HTML
+          document consists of the following sections or elements.
+        </p>
+        <p>
+          <li>The DTD <code>!DOCTYPE</code> declaration</li>
+          <li>The main container <code>html</code> element</li>
+          <li>The head section <code>head</code> element</li>
+          <li>The body section <code>body</code> element</li>
+        </p>
       </section>
       <section class="main-section">
-        <header id="java"></header>
+        <header id="DTD">HTML declaration</header>
+        <p>
+          Every HTML document must begin with a basic declaration that
+          identifies it's type. This is a very useful measure that inform
+          browsers beforehand, what type of document they are about to process,
+          allowing them to adjust their processing mechanisms accordingly.
+        </p>
+        <p>
+          The DTD is insterted using a special tag <code>!DOCTYPE</code> that
+          takes a particular form for each type. This declaration can only be
+          present at the beginning of the document. The following example shows
+          the DTD for an HTML5 document.
+        </p>
+        <p>&#60<code>!DOCTYPE html</code>&#62</p>
       </section>
       <section class="main-section">
-        <header id="java"></header>
+        <header id="html element">the HTML element</header>
+        <p>
+          After having placed the DTD right at the top of the document, it is time to create the main container: a place where the whole document (minus the DTD) will fall into.
+          This container is insterted with the &#60<code>html</code>&#62 element, it provides a good chance to define the default language used by the document through the global attribute <code>lang</code>.
+        </p>
+        <p>
+          The following example shows the structure of the main container (including the language used in the document) and indicates where all the elements of the document should be placed.
+        </p>
+        <p>
+          &#60<code>html</code>&#62
+        <p>...Document's element...</p>
+        <p>&#60&#47<code>html</code>&#62</p>
+        </p>
+        <p>The content of this element can be further divided into two sections: the &#60<code>head</code>&#62 and the &#60<code>body</code>&#62.</p>
       </section>
       <section class="main-section">
-        <header id="java"></header>
+        <header id="head element">the head element</header>
+        <p>The &#60<code>head</code>&#62 section is a container for metadata about the document. This metadata can be classified in five categories according to the element used.</p>
+        <p>
+          <li><strong>The document's title:</strong>describes briefly the subject treated in the document. This is a required item and is inserted with the &#60<code>title</code>&#62 element</li>
+          <li><strong>Style declarations:</strong>groups style definitions used to set presentational attributes for the elements in the document. It's inserted with the &#60<code>style</code>&#62 element</li>
+          <li><strong>Client-side scripts:</strong>nserts programs that provide functionality and interactivity. It's declared with the &#60<code>script</code>&#62 element</li>
+          <li><strong>Meta statements: </strong>define custom attributes and values. They're inserted with the &#60<code>meta</code>&#62 element</li>
+          <li><strong>Relational information:</strong>ndicates resources that are somehow related to the document. It's inserted with the &#60<code>link</code>&#62 element</li>
+        </p>
+        <p>
+          &#60<code>!DOCTYPE html</code>&#62
+        </p>
+        <p>
+          &#60<code>html</code>&#62
+        </p>
+        <p>
+          &#60<code>head</code>&#62
+        </p>
+        <p>
+          &#60<code>title</code>&#62 &#60&#47<code>title</code>&#62
+        </p>
+        <p>
+          &#60<code>meta</code>&#62 &#60&#47<code>meta</code>&#62
+        </p>
+        <p>
+          &#60<code>link</code>&#62 &#60&#47<code>link</code>&#62
+        </p>
+        <p>
+          &#60&#47<code>head</code>&#62
+        </p>
+        <p>&#60&#47<code>html</code>&#62</p>
+      </section>
+      <section class="main-section">
+        <header id="body element">the body element</header>
+        <p>The &#60<code>body</code>&#62 of a document is basically the container for its rendered part. This is the area where you start writing your content which is the part the viewers will see. There are many
+        types of html tags that can go here and with practice, you will be able to know the basics that are commonly used for a more clean structure.</p>
+        <p>
+          <li>&#60<code>header</code>&#62 &#60&#47<code>header</code>&#62</li>
+          <li>&#60<code>nav</code>&#62 &#60&#47<code>nav</code>&#62</li>
+          <li>&#60<code>main</code>&#62 &#60&#47<code>main</code>&#62</li>
+          <li>&#60<code>section</code>&#62 &#60&#47<code>section</code>&#62</li>
+          <li>&#60<code>footer</code>&#62 &#60&#47<code>footer</code>&#62</li>
+        </p>
       </section>
     </main>
+    <footer>Dee Chao 2020 FCC Technical Document</footer>
     <!--[if lt IE 7]>
       <p class="browsehappy">
         You are using an <strong>outdated</strong> browser. Please
