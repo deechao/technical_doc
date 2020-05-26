@@ -8,8 +8,9 @@
 
     Colour Palette:
     ---------------
-    Blue example: rgb(38, 38, 159)
-    Green example: rgb(99, 240, 99)  
+    #66fcf1 = Teal Shade
+    #c5c6c7 = Light Gray Shade
+    #0b0c10 = Black Shade
 
     =========================================
     =========================================  */
@@ -27,11 +28,9 @@ html {
 body {
   box-sizing: border-box;
   margin: 0 auto;
-  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
-    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
-  /*display: flex;
-  justify-content: space-evenly;
-  align-items: center;*/
+  color: #c5c6c7;
+  background-color: #0b0c10;
+  text-align: center;
 }
 
 /*========================================================================/
@@ -39,7 +38,13 @@ body {
 /========================================================================*/
 
 .topic {
-  padding: 1rem 3rem;
+  background-color: #0b0c10;
+  width: 100%;
+  text-transform: capitalize;
+}
+
+.theme {
+  padding: 2rem 0;
 }
 
 /*========================================================================/
@@ -47,19 +52,24 @@ body {
 /========================================================================*/
 
 #navbar {
-  background-color: aqua;
-  display: grid;
-  gap: 0.5rem;
-  padding: 1rem 2rem;
+  background-color: #66fcf1;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+li {
+  list-style-type: none;
 }
 
 #navbar li {
-  list-style-type: none;
+  padding: 1rem 1rem;
 }
 
 #navbar li a {
   text-decoration: none;
-  color: black;
+  color: #0b0c10;
+  font-weight: bold;
+  font-size: 1.2rem;
 }
 
 /*========================================================================/
@@ -67,17 +77,36 @@ body {
 /========================================================================*/
 
 #main-doc {
-  padding: 1rem 2rem;
+  margin: 1rem 0;
+  padding: 0 2rem;
 }
 
 .main-section {
-  padding: 3rem;
+  padding: 3rem 2rem;
   font-size: 1.5rem;
+  text-align: justify;
+  text-indent: 0.5rem;
+  line-height: 2rem;
+}
+.main-section p {
+  margin: 0.7rem 0;
 }
 
 /*========================================================================/
 ============================== SECTION STYLING ===========================
 /========================================================================*/
+
+#basic-structure,
+#DTD,
+#html-element,
+#head-element,
+#body-element {
+  margin: 1rem 0;
+  text-decoration: underline;
+  text-transform: uppercase;
+  text-align: center;
+  font-weight: bold;
+}
 
 /*========================================================================/
 ============================== FOOTER STYLING ============================
