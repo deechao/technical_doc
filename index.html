@@ -15,6 +15,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@300&display=swap" rel="stylesheet">
   </head>
   <body>
+    <div class="media-q">
     <header class="topic">
       <h1 class="theme">Basic Structure of HTML</h1>
       <nav id="navbar">
@@ -59,23 +60,35 @@
           the DTD for an HTML5 document.
         </p>
         <div class="examples">
-          <p>&#60<code>!DOCTYPE html</code>&#62</p>
+          <p>
+            &#60<code>!DOCTYPE html</code>&#62
+          </p>
         </div>
       </section>
       <section class="main-section">
         <header id="html-element">the HTML element</header>
         <p>
-          After having placed the DTD right at the top of the document, it is time to create the main container: a place where the whole document (minus the DTD) will fall into.
-          This container is insterted with the &#60<code>html</code>&#62 element, it provides a good chance to define the default language used by the document through the global attribute <code>lang</code>.
+          After having placed the DTD right at the top of the document, 
+          it is time to create the main container: 
+          a place where the whole document (minus the DTD) will fall into.
+          This container is insterted with the &#60<code>html</code>&#62 element, 
+          it provides a good chance to define the default language used by the 
+          document through the global attribute <code>lang</code>.
         </p>
         <p>
-          The following example shows the structure of the main container (including the language used in the document) and indicates where all the elements of the document should be placed.
+          The following example shows the structure of the main container (including the language used in the document) 
+          and indicates where all the elements of the document should be placed.
         </p>
         <p>
           &#60<code>html</code>&#62
         </p>
-        <p>&#60&#47<code>html</code>&#62</p>
-        <p>The content of this element can be further divided into two sections: the &#60<code>head</code>&#62 and the &#60<code>body</code>&#62.</p>
+        <p>
+          &#60&#47<code>html</code>&#62
+        </p>
+        <p>
+          The content of this element can be further divided into two sections: the 
+          &#60<code>head</code>&#62 and the &#60<code>body</code>&#62.
+        </p>
       </section>
       <section class="main-section">
         <header id="head-element">the head element</header>
@@ -115,24 +128,29 @@
         <p>
           &#60&#47<code>head</code>&#62
         </p>
-        <p>&#60&#47<code>html</code>&#62</p>
-      </div>
+        <p>&#60&#47<code>html</code>&#62
+        </p>
+        </div>
       </section>
       <section class="main-section">
         <header id="body-element">the body element</header>
-        <p>The &#60<code>body</code>&#62 of a document is basically the container for its rendered part. This is the area where you start writing your content which is the part the viewers will see. There are many
-        types of html tags that can go here and with practice, you will be able to know the basics that are commonly used for a more clean structure.</p>
+        <p>The &#60<code>body</code>&#62 of a document is basically the container for its rendered part. 
+          This is the area where you start writing your content which is the part the viewers will see. 
+          There are many types of html tags that can go here and with practice, 
+          you will be able to know the basics that are commonly used for a more clean structure.
+        </p>
         <div class="examples">
-          <p>
-            <li>&#183&#60<code>header</code>&#62 &#60&#47<code>header</code>&#62</li>
-            <li>&#183&#60<code>nav</code>&#62 &#60&#47<code>nav</code>&#62</li>
-            <li>&#183&#60<code>main</code>&#62 &#60&#47<code>main</code>&#62</li>
-            <li>&#183&#60<code>section</code>&#62 &#60&#47<code>section</code>&#62</li>
-            <li>&#183&#60<code>footer</code>&#62 &#60&#47<code>footer</code>&#62</li>
-          </p>
+        <p>
+          <li>&#183&#60<code>header</code>&#62 &#60&#47<code>header</code>&#62</li>
+          <li>&#183&#60<code>nav</code>&#62 &#60&#47<code>nav</code>&#62</li>
+          <li>&#183&#60<code>main</code>&#62 &#60&#47<code>main</code>&#62</li>
+          <li>&#183&#60<code>section</code>&#62 &#60&#47<code>section</code>&#62</li>
+          <li>&#183&#60<code>footer</code>&#62 &#60&#47<code>footer</code>&#62</li>
+        </p>
         </div>
       </section>
     </main>
+    </div>
     <footer class="foot">Dee Chao 2020 FCC Technical Document</footer>
     <!--[if lt IE 7]>
       <p class="browsehappy">

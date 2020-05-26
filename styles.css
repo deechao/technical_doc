@@ -1,5 +1,5 @@
-/*  =========================================
-    =========================================
+/* ==========================================
+   ==========================================
 
     Project: FreeCodeCamp.Org
 
@@ -11,9 +11,10 @@
     #66fcf1 = Teal Shade
     #c5c6c7 = Light Gray Shade
     #0b0c10 = Black Shade
+    #ee125c = Red Shade
 
-    =========================================
-    =========================================  */
+  ==========================================
+  ==========================================  */
 
 * {
   margin: 0;
@@ -30,8 +31,12 @@ body {
   margin: 0 auto;
   font-family: "Barlow", sans-serif;
   color: #c5c6c7;
-  background-color: #0b0c10;
   text-align: center;
+}
+
+.topic,
+body {
+  background-color: #0b0c10;
 }
 
 /*========================================================================/
@@ -39,12 +44,11 @@ body {
 /========================================================================*/
 
 .topic {
-  background-color: #0b0c10;
   width: 100%;
   text-transform: uppercase;
   position: -webkit-sticky;
   position: sticky;
-  top: -0.1rem;
+  top: 0;
 }
 
 .theme {
@@ -69,7 +73,8 @@ li {
   padding: 0.5rem 0;
 }
 
-#navbar li a {
+#navbar li a:link,
+#navbar li a:visited {
   text-decoration: none;
   color: #0b0c10;
   padding: 0 0.5rem;
@@ -78,7 +83,7 @@ li {
 }
 
 #navbar li a:hover {
-  font-size: 2rem;
+  color: #ee125c;
 }
 
 /*========================================================================/
@@ -93,12 +98,14 @@ li {
 .main-section {
   padding: 3rem 2rem;
   font-size: 1.5rem;
-  text-align: justify;
   text-indent: 0.5rem;
   line-height: 2rem;
+  border-bottom: 0.1rem solid #c5c6c7;
 }
+
 .main-section p {
   margin: 0.7rem 0;
+  text-align: justify;
 }
 
 /*========================================================================/
@@ -119,11 +126,11 @@ li {
 }
 
 .examples {
+  margin: 1.5rem 0;
   background-color: #66fcf1;
   color: #0b0c10;
-  font-weight: bold;
+  font-weight: bolder;
   padding: 1rem;
-  text-align: center;
   border-radius: 1rem;
   -webkit-border-radius: 1rem;
   -moz-border-radius: 1rem;
@@ -139,3 +146,96 @@ li {
   margin: 3rem 0;
   font-size: 1.5rem;
 }
+
+/*========================================================================/
+===================== MEDIA QUERY / MIN-WIDTH 460 PX =====================
+/========================================================================*/
+
+@media screen and (min-width: 460px) {
+  #navbar li {
+    padding: 1rem 0;
+  }
+}
+
+/*========================================================================/
+===================== MEDIA QUERY / MIN-WIDTH 600 PX =====================
+/========================================================================*/
+
+@media screen and (min-width: 600px) {
+  #navbar li a:link,
+  #navbar li a:visited {
+    font-size: 1.5rem;
+  }
+
+  #navbar li a:hover {
+    font-size: 2rem;
+  }
+}
+
+/*========================================================================/
+===================== MEDIA QUERY / MIN-WIDTH 1100 PX ====================
+/========================================================================*/
+
+@media screen and (min-width: 1100px) {
+  .media-q {
+    display: flex;
+  }
+
+  #navbar,
+  .topic {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .topic {
+    border-right: 0.1rem solid #c5c6c7;
+    height: 100vh;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    left: 0;
+  }
+
+  .theme {
+    padding: 3rem 0;
+    font-size: 3rem;
+  }
+
+  #navbar li {
+    padding: 3rem 0;
+    border-bottom: 0.1rem solid #0b0c10;
+  }
+
+  #navbar li a {
+    font-weight: bolder;
+  }
+
+  #navbar li a:link,
+  #navbar li a:visited {
+    font-size: 2.5rem;
+  }
+
+  .foot {
+    background-color: #66fcf1;
+    margin: 0;
+    padding: 3rem 0;
+    color: #0b0c10;
+    font-size: 2rem;
+    font-weight: bold;
+  }
+}
+
+/*========================================================================/
+===================== MEDIA QUERY / MIN-WIDTH 1200 PX ====================
+/========================================================================*/
+
+@media screen and (min-width: 1200px) {
+  .main-section {
+    font-size: 2rem;
+    line-height: 3;
+  }
+}
+
+/*========================================================================/
+===================== MEDIA QUERY / MIN-WIDTH 1360 PX ====================
+/========================================================================*/
