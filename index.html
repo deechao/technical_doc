@@ -12,6 +12,7 @@
     <meta name="description" content="" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="stylesheet" type="text/css" href="styles.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@300&display=swap" rel="stylesheet">
   </head>
   <body>
     <header class="topic">
@@ -34,12 +35,14 @@
           information about your document. The basic structure of any HTML
           document consists of the following sections or elements.
         </p>
-        <p>
-          <li>&#183The DTD <code>!DOCTYPE</code> declaration</li>
-          <li>&#183The main container <code>html</code> element</li>
-          <li>&#183The head section <code>head</code> element</li>
-          <li>&#183The body section <code>body</code> element</li>
-        </p>
+        <div class="examples">
+          <p>
+            <li>&#183The DTD <code>!DOCTYPE</code> declaration</li>
+            <li>&#183The main container <code>html</code> element</li>
+            <li>&#183The head section <code>head</code> element</li>
+            <li>&#183The body section <code>body</code> element</li>
+          </p>
+      </div>
       </section>
       <section class="main-section">
         <header id="DTD">HTML declaration</header>
@@ -55,7 +58,9 @@
           present at the beginning of the document. The following example shows
           the DTD for an HTML5 document.
         </p>
-        <p>&#60<code>!DOCTYPE html</code>&#62</p>
+        <div class="examples">
+          <p>&#60<code>!DOCTYPE html</code>&#62</p>
+        </div>
       </section>
       <section class="main-section">
         <header id="html-element">the HTML element</header>
@@ -82,6 +87,7 @@
           <li><strong>Meta statements:</strong>define custom attributes and values. They're inserted with the &#60<code>meta</code>&#62 element</li>
           <li><strong>Relational information:</strong>ndicates resources that are somehow related to the document. It's inserted with the &#60<code>link</code>&#62 element</li>
         </p>
+        <div class="examples">
         <p>
           &#60<code>!DOCTYPE html</code>&#62
         </p>
@@ -110,21 +116,24 @@
           &#60&#47<code>head</code>&#62
         </p>
         <p>&#60&#47<code>html</code>&#62</p>
+      </div>
       </section>
       <section class="main-section">
         <header id="body-element">the body element</header>
         <p>The &#60<code>body</code>&#62 of a document is basically the container for its rendered part. This is the area where you start writing your content which is the part the viewers will see. There are many
         types of html tags that can go here and with practice, you will be able to know the basics that are commonly used for a more clean structure.</p>
-        <p>
-          <li>&#183&#60<code>header</code>&#62 &#60&#47<code>header</code>&#62</li>
-          <li>&#183&#60<code>nav</code>&#62 &#60&#47<code>nav</code>&#62</li>
-          <li>&#183&#60<code>main</code>&#62 &#60&#47<code>main</code>&#62</li>
-          <li>&#183&#60<code>section</code>&#62 &#60&#47<code>section</code>&#62</li>
-          <li>&#183&#60<code>footer</code>&#62 &#60&#47<code>footer</code>&#62</li>
-        </p>
+        <div class="examples">
+          <p>
+            <li>&#183&#60<code>header</code>&#62 &#60&#47<code>header</code>&#62</li>
+            <li>&#183&#60<code>nav</code>&#62 &#60&#47<code>nav</code>&#62</li>
+            <li>&#183&#60<code>main</code>&#62 &#60&#47<code>main</code>&#62</li>
+            <li>&#183&#60<code>section</code>&#62 &#60&#47<code>section</code>&#62</li>
+            <li>&#183&#60<code>footer</code>&#62 &#60&#47<code>footer</code>&#62</li>
+          </p>
+        </div>
       </section>
     </main>
-    <footer>Dee Chao 2020 FCC Technical Document</footer>
+    <footer class="foot">Dee Chao 2020 FCC Technical Document</footer>
     <!--[if lt IE 7]>
       <p class="browsehappy">
         You are using an <strong>outdated</strong> browser. Please
