@@ -126,7 +126,7 @@ li {
 }
 
 .examples {
-  margin: 1.5rem 0;
+  margin: 2rem 0;
   background-color: #66fcf1;
   color: #0b0c10;
   font-weight: bolder;
@@ -244,6 +244,15 @@ li {
   .main-section {
     padding: 0 4rem;
     width: 80vw;
+  }
+
+  #basic-structure,
+  #DTD,
+  #html-element,
+  #head-element,
+  #body-element {
+    font-size: 3rem;
+    font-weight: bold;
   }
 }
 
