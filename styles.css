@@ -28,14 +28,11 @@ html {
 
 body {
   box-sizing: border-box;
+  width: 100%;
   margin: 0 auto;
   font-family: "Barlow", sans-serif;
   color: #c5c6c7;
   text-align: center;
-}
-
-.topic,
-body {
   background-color: #0b0c10;
 }
 
@@ -43,16 +40,12 @@ body {
 ============================== HEADER STYLING ============================
 /========================================================================*/
 
-.topic {
-  width: 100%;
+header {
+  padding: 0.5rem 0;
+  font-size: 1.5rem;
+  font-weight: bold;
   text-transform: uppercase;
-  position: -webkit-sticky;
-  position: sticky;
-  top: 0;
-}
-
-.theme {
-  padding: 2rem 0;
+  border: 0.1rem solid #c5c6c7;
 }
 
 /*========================================================================/
@@ -60,13 +53,14 @@ body {
 /========================================================================*/
 
 #navbar {
-  background-color: #66fcf1;
-  display: flex;
-  justify-content: space-evenly;
+  height: 10rem;
+  overflow-x: hidden;
+  overflow-y: auto;
 }
 
 li {
   list-style-type: none;
+  background-color: #66fcf1;
 }
 
 #navbar li {
@@ -76,8 +70,9 @@ li {
 #navbar li a:link,
 #navbar li a:visited {
   text-decoration: none;
-  color: #0b0c10;
+  text-transform: capitalize;
   padding: 0 0.5rem;
+  color: #0b0c10;
   font-weight: bold;
   font-size: 1.2rem;
 }
@@ -98,9 +93,8 @@ li {
 .main-section {
   padding: 3rem 2rem;
   font-size: 1.5rem;
-  text-indent: 0.5rem;
+  text-indent: 0.8rem;
   line-height: 2rem;
-  text-align: left;
   border-bottom: 0.1rem solid #c5c6c7;
 }
 
@@ -112,19 +106,6 @@ li {
 /*========================================================================/
 ============================== SECTION STYLING ===========================
 /========================================================================*/
-
-#basic-structure,
-#DTD,
-#html-element,
-#head-element,
-#body-element {
-  margin: 1rem 0;
-  text-decoration: underline;
-  text-transform: uppercase;
-  text-align: center;
-  font-size: 2rem;
-  font-weight: bold;
-}
 
 .examples {
   margin: 2rem 0;
@@ -180,40 +161,35 @@ li {
 @media screen and (min-width: 1100px) {
   .media-q {
     display: flex;
+    justify-content: space-evenly;
   }
 
-  #navbar,
-  .topic {
-    display: flex;
-    flex-direction: column;
+  #navbar li a:link,
+  #navbar li a:visited {
+    padding: 0 0.5rem;
+    font-size: 2rem;
   }
 
-  .topic {
+  #navbar {
+    width: 80vw;
     border-right: 0.1rem solid #c5c6c7;
     height: 100vh;
     position: -webkit-sticky;
     position: sticky;
     top: 0;
     left: 0;
-  }
-
-  .theme {
-    padding: 3rem 0;
-    font-size: 3rem;
+    display: flex;
+    flex-direction: column;
   }
 
   #navbar li {
     padding: 3rem 0;
-    border-bottom: 0.1rem solid #0b0c10;
+    border-bottom: 0.2rem solid #c5c6c7;
   }
 
-  #navbar li a {
-    font-weight: bolder;
-  }
-
-  #navbar li a:link,
-  #navbar li a:visited {
-    font-size: 2.5rem;
+  header {
+    padding: 1rem 0;
+    font-size: 2rem;
   }
 
   .foot {
@@ -234,26 +210,6 @@ li {
   .main-section {
     font-size: 2rem;
     line-height: 3;
-  }
-}
-
-/*========================================================================/
-===================== MEDIA QUERY / MIN-WIDTH 1500 PX ====================
-/========================================================================*/
-
-@media screen and (min-width: 1500px) {
-  .main-section {
-    padding: 0 4rem;
-    width: 80vw;
-  }
-
-  #basic-structure,
-  #DTD,
-  #html-element,
-  #head-element,
-  #body-element {
-    font-size: 3rem;
-    font-weight: bold;
   }
 }
 
